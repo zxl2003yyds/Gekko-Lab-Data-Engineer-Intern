@@ -52,7 +52,7 @@ data/Brazilian E-Commerce*/
 
 
 # ============================================================
-# 笔试产物（候选人提交时应保留；这里只忽略中间文件）
+# Q3 运行产物（根 README 明确要求本地生成，不提交）
 # ============================================================
 run_all_*.log
 q3_etl_pipeline/outputs/*.parquet
@@ -67,3 +67,20 @@ q3_etl_pipeline/pipeline_log.txt
 *.pem
 *.key
 credentials.json
+
+# 下载缓存与本地检查结果
+.cache/
+.local/
+
+# 本地学习、临时文件和历史过程材料
+/output/
+/tmp/
+/data/preparation_report.md
+/q4_llm_extraction/evaluation_history/
+
+# 本人辅助复核网页；正式评估与盲审工具仍随项目提交
+/q4_llm_extraction/serve_review.py
+/q4_llm_extraction/review_web/
+/q4_llm_extraction/semantic_review/chinese_aid.json
+/q4_llm_extraction/semantic_review/ai_self_review.json
+/tests/test_review_web.py
