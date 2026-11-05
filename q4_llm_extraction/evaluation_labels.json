@@ -1,0 +1,429 @@
+{
+  "version": "v2-final-unseen-unique-text-60",
+  "reviewer": "current assistant; labels written before viewing final-rule predictions; not independent human ground truth",
+  "policy": "Extract stated problems; do not infer delay from non-receipt alone. A request for refund or response is not by itself an additional failure when already explained by a specific issue. Generic explicit dissatisfaction uses other.",
+  "labels": [
+    {
+      "source_row": 15288,
+      "categories": [
+        "quality_defect",
+        "other"
+      ],
+      "note": "商品损坏，退货申请被拒；拒绝不是未回复。"
+    },
+    {
+      "source_row": 95386,
+      "categories": [
+        "other"
+      ],
+      "note": "运费贵还要邮局自取。"
+    },
+    {
+      "source_row": 80785,
+      "categories": [],
+      "note": "明确好评。"
+    },
+    {
+      "source_row": 94005,
+      "categories": [
+        "wrong_product",
+        "seller_communication"
+      ],
+      "note": "发错货，邮件未回复。"
+    },
+    {
+      "source_row": 17732,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "买二收一。"
+    },
+    {
+      "source_row": 71422,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "另一商品尚未到，存在拼写错误。"
+    },
+    {
+      "source_row": 11810,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "买两件只收到一件。"
+    },
+    {
+      "source_row": 48681,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "不是下单的商品；完好不代表没发错。"
+    },
+    {
+      "source_row": 72677,
+      "categories": [],
+      "note": "查询是否取消，未陈述明确投诉。"
+    },
+    {
+      "source_row": 74733,
+      "categories": [
+        "quality_defect"
+      ],
+      "note": "鞋垫有问题；等待供应商联系不直接认定已失联。"
+    },
+    {
+      "source_row": 19847,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "碳粉型号 CB435A 与订购 CB436A 不符。"
+    },
+    {
+      "source_row": 50194,
+      "categories": [
+        "other"
+      ],
+      "note": "对配送不满意，未说明是否迟到。"
+    },
+    {
+      "source_row": 34946,
+      "categories": [
+        "quality_defect"
+      ],
+      "note": "麦克风不工作、声音异常。"
+    },
+    {
+      "source_row": 19882,
+      "categories": [
+        "quality_defect"
+      ],
+      "note": "产品不工作。"
+    },
+    {
+      "source_row": 78379,
+      "categories": [
+        "quality_defect"
+      ],
+      "note": "镜子质量差；退货退款是补救请求，不另推断退款故障。"
+    },
+    {
+      "source_row": 89152,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "只送一半；请求回复本身不直接认定失联。"
+    },
+    {
+      "source_row": 88853,
+      "categories": [
+        "other"
+      ],
+      "note": "临近期限才要求远距离自取，导致未取到货。"
+    },
+    {
+      "source_row": 90447,
+      "categories": [
+        "delivery_late",
+        "missing_item"
+      ],
+      "note": "超过期限仍未收到；退款为条件性的后续请求。"
+    },
+    {
+      "source_row": 53792,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "买三收一。"
+    },
+    {
+      "source_row": 71403,
+      "categories": [
+        "delivery_late"
+      ],
+      "note": "付款后延后承诺时间，实际仍晚两天。"
+    },
+    {
+      "source_row": 94163,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "付了两件的钱，只收到一件。"
+    },
+    {
+      "source_row": 36992,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "缺少背包。"
+    },
+    {
+      "source_row": 21415,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "四件只收到两件。"
+    },
+    {
+      "source_row": 19872,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "两瓶香水只到一瓶。"
+    },
+    {
+      "source_row": 3166,
+      "categories": [],
+      "note": "店铺可靠，曾经回购。"
+    },
+    {
+      "source_row": 36313,
+      "categories": [
+        "missing_item",
+        "wrong_product"
+      ],
+      "note": "两件原装墨盒只收到一件兼容墨盒；等待邮件回复尚未证明失联。"
+    },
+    {
+      "source_row": 31359,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "模具尺寸及适配炸锅型号不符。"
+    },
+    {
+      "source_row": 40022,
+      "categories": [
+        "other",
+        "delivery_late",
+        "missing_item"
+      ],
+      "note": "开票慢、明确超过日期且商品未到。"
+    },
+    {
+      "source_row": 5765,
+      "categories": [
+        "delivery_late",
+        "seller_communication"
+      ],
+      "note": "配送慢，缺少邮件跟踪信息。"
+    },
+    {
+      "source_row": 57364,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "错误流转到别州，至今未到家。"
+    },
+    {
+      "source_row": 98086,
+      "categories": [
+        "other"
+      ],
+      "note": "未满足预期，未说明具体质量缺陷；实际提前送达。"
+    },
+    {
+      "source_row": 7918,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "颜色不符。"
+    },
+    {
+      "source_row": 56551,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "买两壶收一壶，退款或补发是补救请求。"
+    },
+    {
+      "source_row": 66558,
+      "categories": [
+        "other"
+      ],
+      "note": "不再购买的负面意见，原因未说明。"
+    },
+    {
+      "source_row": 21612,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "仍未收到。"
+    },
+    {
+      "source_row": 56797,
+      "categories": [],
+      "note": "感谢，无投诉。"
+    },
+    {
+      "source_row": 19155,
+      "categories": [
+        "missing_item",
+        "other"
+      ],
+      "note": "商品及退款均未收到。"
+    },
+    {
+      "source_row": 66078,
+      "categories": [],
+      "note": "希望更快，但明确按时且商品正确。"
+    },
+    {
+      "source_row": 44885,
+      "categories": [
+        "quality_defect"
+      ],
+      "note": "材料不好。"
+    },
+    {
+      "source_row": 13161,
+      "categories": [
+        "wrong_product",
+        "other"
+      ],
+      "note": "发错型号，想换但没有库存。"
+    },
+    {
+      "source_row": 58721,
+      "categories": [
+        "other"
+      ],
+      "note": "质疑原装 HP 身份；这是买家的指控，未独立核实。"
+    },
+    {
+      "source_row": 31377,
+      "categories": [
+        "other"
+      ],
+      "note": "不符个人预期，希望退货；对材料和交付不作负面推断。"
+    },
+    {
+      "source_row": 64521,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未收到全部商品但状态称已送达。"
+    },
+    {
+      "source_row": 50977,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未收到商品。"
+    },
+    {
+      "source_row": 5592,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未交付。"
+    },
+    {
+      "source_row": 93983,
+      "categories": [
+        "other"
+      ],
+      "note": "以为材质是橡胶而非塑料，未证明广告承诺不符。"
+    },
+    {
+      "source_row": 83559,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "遥控器品牌型号不符。"
+    },
+    {
+      "source_row": 61066,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未收到，未确定责任方。"
+    },
+    {
+      "source_row": 87295,
+      "categories": [
+        "other"
+      ],
+      "note": "难过失望的泛泛负面情绪。"
+    },
+    {
+      "source_row": 88408,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "只收到部分，缺书。"
+    },
+    {
+      "source_row": 90314,
+      "categories": [
+        "other"
+      ],
+      "note": "抱怨耗时，未明确是配送还是其他环节。"
+    },
+    {
+      "source_row": 67174,
+      "categories": [
+        "other"
+      ],
+      "note": "缺购物小票。"
+    },
+    {
+      "source_row": 55444,
+      "categories": [
+        "missing_item",
+        "delivery_late"
+      ],
+      "note": "到今天仍没到，提及已经过去的预计日期。"
+    },
+    {
+      "source_row": 77864,
+      "categories": [
+        "wrong_product"
+      ],
+      "note": "明显与网站展示不同。"
+    },
+    {
+      "source_row": 6341,
+      "categories": [
+        "wrong_product",
+        "quality_defect"
+      ],
+      "note": "不及广告所述，质量差。"
+    },
+    {
+      "source_row": 55871,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未收到，给出计划日期但没有评价当天日期，不确定是否已经超期。"
+    },
+    {
+      "source_row": 52770,
+      "categories": [
+        "missing_item",
+        "other"
+      ],
+      "note": "未收到，商品在邮局且须自取。"
+    },
+    {
+      "source_row": 51500,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "未收到商品。"
+    },
+    {
+      "source_row": 73576,
+      "categories": [
+        "missing_item"
+      ],
+      "note": "只到了两件，其他已选购商品未到。"
+    },
+    {
+      "source_row": 41239,
+      "categories": [
+        "other"
+      ],
+      "note": "广告易误导；店家处理正常。"
+    }
+  ]
+}
