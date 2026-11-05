@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "review_kind": "project_owner_translation_tool_assisted_review",
+  "translation_tool": "Google 翻译",
+  "translation_tool_confirmed_on": "2026-11-05",
+  "source_revision": 85,
+  "sample_design": "11 ambiguous cases from the 60 post-hoc semantic cases; not a random population sample",
+  "reviewed_count": 11,
+  "translation_faithful_count": 9,
+  "translation_unfilled_count": 2,
+  "independent_human_acceptance": "pending",
+  "independent_accuracy": null,
+  "method_note_zh": "本人不认识葡萄牙语，借助 Google 翻译及网页中文辅助材料作出判断。保留原选择，不作为专业葡英审核、独立真值或总体准确率。未附逐条 Google 翻译输入输出及翻译方向。",
+  "records": [
+    {
+      "source_row": 6341,
+      "source_text_sha256": "173f921ae65b681bc68480939c0da4a3628d2ec7eb587bb3fbd85bc1678d5e2a",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "low"
+        },
+        {
+          "category": "quality_defect",
+          "severity": "low"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "uncertain",
+      "translation": null,
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 13161,
+      "source_text_sha256": "5c02befdc53f050946d78a9a8ba3cafe560128d3031e62f69d0cd750d7ffd188",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "high"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 15288,
+      "source_text_sha256": "99209ad4035146a5425f5080f333295dbc6b6b94211baaf595721d19e2f07cee",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "packaging",
+          "severity": "medium"
+        },
+        {
+          "category": "seller_communication",
+          "severity": "low"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 55444,
+      "source_text_sha256": "b905716650eb65d763bfb59730ef5a4b3d1bc0e84dcd041b7ad7d864e2a5d0f8",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 55871,
+      "source_text_sha256": "0c7d3beea651494f5123fc82e0e220a84497dfcda17712828e4e374ef85d4076",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 73576,
+      "source_text_sha256": "7d250e8e68056a10d419a40fb074de59a60ee9512994c5603c1bf2ba2fd98b1c",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "medium"
+        }
+      ],
+      "sentiment": "mixed",
+      "actionable": "yes",
+      "translation": null,
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 78379,
+      "source_text_sha256": "f6d073746847ce8e7d98c507b35bacc949f82144ce3fdae67fd23fa8225ed297",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "high"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 88853,
+      "source_text_sha256": "f0905523451d49f225c0c74064d54f3c3e47c398958a23acce0a199d7242f9fa",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "medium"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 90447,
+      "source_text_sha256": "4c0c988fa824824e167e55a2383c4f4224c731ecc1309633b7d3d3fbd3a28d20",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 94163,
+      "source_text_sha256": "f7e4dba8cc97025ef58e11240d331f74c81e773e800929d20f38f0495baff81e",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment": "negative",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    },
+    {
+      "source_row": 98086,
+      "source_text_sha256": "5211cc271b0132e5f46ce53af518a2c93ee702457b1e165d6c58f2609e9842e9",
+      "status": "confirmed",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "low"
+        }
+      ],
+      "sentiment": "mixed",
+      "actionable": "yes",
+      "translation": "faithful",
+      "reference_seen": false,
+      "chinese_seen": true,
+      "independent_review": false
+    }
+  ]
+}

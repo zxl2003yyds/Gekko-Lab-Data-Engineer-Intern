@@ -1,0 +1,1153 @@
+{
+  "schema_version": 1,
+  "author": "current assistant",
+  "review_status": "assistant_draft_pending_independent_human_review",
+  "scope": "Post-hoc case analysis of the existing 60 cases. Not an unseen test or automatic generalisation improvement.",
+  "confidence_status": "No new numeric confidence is invented; sentiment labels and severity remain draft judgements.",
+  "cases": [
+    {
+      "source_row": 15288,
+      "source_text_sha256": "99209ad4035146a5425f5080f333295dbc6b6b94211baaf595721d19e2f07cee",
+      "translation_en": "I bought the product and it arrived damaged. I am trying to return the goods, but the store is rejecting my request. I am very dissatisfied with the store and with lannister.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "medium"
+        },
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "return"
+      ],
+      "analysis_zh": "损坏和退货申请被拒是两个事实；拒绝申请不等于没有回复。未说明完全无法使用，质量问题按 medium 保守处理。",
+      "uncertainties": [
+        "损坏程度及是否影响正常使用未明确"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 95386,
+      "source_text_sha256": "ef1c814b9c37582584eb106704f64d398856570662ae8a4e6a1c89257fd8ec33",
+      "translation_en": "Shipping is expensive, and if you still want the item, you have to collect it at the post office. Very bad. They still want compliments; I hated it.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "运费与自取方式投诉归 other；没有明确超时，不标 delivery_late。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 80785,
+      "source_text_sha256": "fc777d49ad3a1b5f6ccf05399aff7fb92ba4f9f6742e3956895c347ed20c4e0c",
+      "translation_en": "VERY GOOD PRODUCT. I LIKED IT.",
+      "issues": [],
+      "sentiment_label": "positive",
+      "requested_actions": [],
+      "analysis_zh": "正文是正面评价，低分不能反向制造问题。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 94005,
+      "source_text_sha256": "03a4bf61dceb02c9440b431a4901ff3f443789648a6a33eb7ad9f4fdff5b92ba",
+      "translation_en": "They sent my order incorrectly. I have already sent an email, and they have not replied.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        },
+        {
+          "category": "seller_communication",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "responderan 是拼写错误，语境明确表示未回复；保留过去已发邮件的时间关系。 原文报告已经发送邮件但未获回复，并未明确提出新的联系请求；可跟进不等于已提出请求。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 17732,
+      "source_text_sha256": "63480de5e748db1b78a8a6c47cb6682b9708923af8a9f616877f0f497609245a",
+      "translation_en": "I bought two and received only one.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "应比较购买量 2 与到货量 1；不能只匹配某个商品名。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 71422,
+      "source_text_sha256": "5ac3a00df9a63795cbe9ab485fd1a9a49ba27d55cf6789d000856beaa71e65c3",
+      "translation_en": "The product arrived correctly; it is just that my other product still has not arrived.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "chego 在此是 chegou 的非规范拼写；一件正常不消除另一件缺失。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 11810,
+      "source_text_sha256": "b8642777a07feb958ff8678b5f03a9fd71061897a77ff95c101f934a1ccd0510",
+      "translation_en": "I bought two beer towers. The carrier delivered only one package to me, and there was only one tower inside. I am very dissatisfied!",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "包裹数与商品数分开；缺货结论来自塔数量 2→1，而非仅仅一只包裹。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 48681,
+      "source_text_sha256": "ea76acbcbdfdd657400893fffa9f2d6256f8709d4a90b27132ba7e786ae28e5c",
+      "translation_en": "It is not the same product that I ordered, but it arrived in perfect condition.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "完好描述物理状态，不能否定发错商品。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 72677,
+      "source_text_sha256": "bbd54a05f8d280126005eb963cf99f78689e73891f0bbb5ff8d36ccf3d795f07",
+      "translation_en": "I want to know whether it was cancelled, that is all!",
+      "issues": [],
+      "sentiment_label": "unknown",
+      "requested_actions": [
+        "cancellation_status"
+      ],
+      "analysis_zh": "这是询问取消状态，没有足够事实判定取消失败或客服失联。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 74733,
+      "source_text_sha256": "c7640a3d7a12d9725dfde0eb3c0150880dce9412cea58a52c086b1cfdb571bb7",
+      "translation_en": "I am giving it 2 stars because the product arrived with a problem in the insole. I am waiting for the supplier to contact me so that I can exchange it.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "exchange",
+        "contact"
+      ],
+      "analysis_zh": "鞋垫有问题但未明确完全无法使用，severity 为 medium；等待联系是请求状态，不独立标客服故障。",
+      "uncertainties": [],
+      "protected_literals": [
+        "2"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 19847,
+      "source_text_sha256": "c7ddaa88e7eb275dd36c2f7e368f20529e084599d70ed6def11b7756842cd922",
+      "translation_en": "I requested toner CB436A and received toner CB435A. I need you to exchange the product.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "exchange"
+      ],
+      "analysis_zh": "两个型号仅一位不同，必须逐字符保留；不能归因兼容性故障。",
+      "uncertainties": [],
+      "protected_literals": [
+        "CB436A",
+        "CB435A"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 50194,
+      "source_text_sha256": "4a20167f4c4711c8578ef9391ce6989dd83862ec7ccba6b436eae4e30f25f3b1",
+      "translation_en": "I am dissatisfied with the delivery.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "没有给出迟到、丢件或错地址等细节，保留笼统配送不满。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 34946,
+      "source_text_sha256": "443244974fc03a80dd740fb4265e402a1bb12e2380626fcc48bf7282e435aee2",
+      "translation_en": "The microphone is not working. Its sound is very quiet and strange. What should I do to use the warranty?",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "warranty"
+      ],
+      "analysis_zh": "原文明示不工作，即使另有低音量描述，不能翻译成完全没有声音。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 19882,
+      "source_text_sha256": "2ce493d4425521dbf773a4693d54108021c89f7ab3dc567f41f6fdf332411adb",
+      "translation_en": "The product does not work.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "直接功能故障。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 78379,
+      "source_text_sha256": "f6d073746847ce8e7d98c507b35bacc949f82144ce3fdae67fd23fa8225ed297",
+      "translation_en": "The mirror is of terrible quality. It is not compatible with the mirrors of the same model (10X) that I have already bought. I request to return it and have my payment refunded.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "return",
+        "refund"
+      ],
+      "analysis_zh": "不兼容指与此前镜子的比较，未明确实际发错型号；退款是请求，未声明已退款失败。 compatível 保留字面译法，但其比较维度未说明，应由懂葡语的审核者进一步判断。",
+      "uncertainties": [
+        "compatível 在此可能指与此前同型号镜子相符或相当，不能确定为物理兼容性问题"
+      ],
+      "protected_literals": [
+        "10X"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 89152,
+      "source_text_sha256": "295cbd8d6e86e279848312afb14e01794e7faf9d03cf961b4d7f38aec1263ae1",
+      "translation_en": "Only half of my order was delivered. The rulers arrived, but the scissors did not. I am waiting for a response from the store.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "contact"
+      ],
+      "analysis_zh": "缺少的是剪刀；等待回复尚不等于已联系多次无人回应。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 88853,
+      "source_text_sha256": "f0905523451d49f225c0c74064d54f3c3e47c398958a23acce0a199d7242f9fa",
+      "translation_en": "After finding out close to the deadline that I would have to collect the goods from a post-office distribution centre more than an hour from my home, I missed out on the goods.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "perdi a mercadoria 可指未能取到/失去这次取货机会，不能擅译为物流公司丢失包裹；具体结果需复核。",
+      "uncertainties": [
+        "perdi a mercadoria 的具体丢失/未取到结果"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 90447,
+      "source_text_sha256": "4c0c988fa824824e167e55a2383c4f4224c731ecc1309633b7d3d3fbd3a28d20",
+      "translation_en": "The expected deadline has already passed, and still nothing has arrived. The watch is a gift, and the date has even passed. If they take any longer, I want a refund.",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        },
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "conditional_refund"
+      ],
+      "analysis_zh": "退款请求有条件，不能标退款失败；后面的 data 可能指送礼日期或前述期限，不添加具体日期或确定其所指。",
+      "uncertainties": [
+        "第二处 data 的具体所指不明确"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 53792,
+      "source_text_sha256": "3cbd568acf120c23a388f0170eb20ef6123f9c8ca0d84b9aef72e44cedb948da",
+      "translation_en": "I bought three products and received only one.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "数量 3→1。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 71403,
+      "source_text_sha256": "a442c02e391bd541358d142d585ae72c7771d0a51d31c29aa108c7d1e6708d60",
+      "translation_en": "One delivery deadline was shown when I made the purchase, but after I paid, it changed and was postponed until after Christmas. Even then, it arrived two days later than stated.",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "已经收到，问题为相对变更后承诺仍迟到；不标当前缺货。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 94163,
+      "source_text_sha256": "f7e4dba8cc97025ef58e11240d331f74c81e773e800929d20f38f0495baff81e",
+      "translation_en": "I requested and HAVE ALREADY PAID FOR 02 (TWO) stools (mochos), and I received only 01 (ONE)!!! Where do I complain?",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "complaint_channel"
+      ],
+      "analysis_zh": "mocho 的词典义包含无靠背凳；关联商品类别 moveis_escritorio（办公家具）支持在此译为 stools，不能进一步断言是牙科凳等具体款式。数字和强调完整保留。",
+      "uncertainties": [
+        "具体凳子款式未在评价中提供"
+      ],
+      "protected_literals": [
+        "02",
+        "01",
+        "mochos"
+      ],
+      "actionable_for_seller": true,
+      "translation_context": {
+        "source": "local Olist order_items -> products; dictionary",
+        "product_id": "e2a73ef4fc3f78da8824aaec109a2676",
+        "category": "moveis_escritorio",
+        "dictionary_url": "https://dicionario.priberam.org/mocho",
+        "scope": "仅用于词义消歧，不据此增加投诉"
+      }
+    },
+    {
+      "source_row": 36992,
+      "source_text_sha256": "737e772bfbf25c4294cbcbf6ced3719f26e8d345efa0012336ecfed8af1ab62e",
+      "translation_en": "I bought 2 products: a Hulk mask and a Hulk backpack. Only the mask was delivered. I would like to know what to do.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "support"
+      ],
+      "analysis_zh": "缺少背包，不是数量已经齐全但类别不同。",
+      "uncertainties": [],
+      "protected_literals": [
+        "2",
+        "Hulk"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 21415,
+      "source_text_sha256": "26906a5b851f57c7e31390df02c2bae45d490a43f28165eff3caf8d923e09339",
+      "translation_en": "The order was delivered incomplete. I bought two cases for the moto g5 phone and two glass screen protectors for the same phone, but only one case and one screen protector were delivered.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "两个品类各少一件，不能将屏幕保护膜当作手机本身。",
+      "uncertainties": [],
+      "protected_literals": [
+        "moto g5"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 19872,
+      "source_text_sha256": "71ea7c7b1638e84ff0e106cf34c1907379358661971c483206a980c1c8903c18",
+      "translation_en": "I placed an order for two perfumes, but only one product was delivered.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "数量对比可跨从句。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 3166,
+      "source_text_sha256": "76b3e36caaa0d71849380a5a88d8cc6b454213710585459997c515787d163280",
+      "translation_en": "A trustworthy store. I had bought from it before.",
+      "issues": [],
+      "sentiment_label": "positive",
+      "requested_actions": [],
+      "analysis_zh": "回购与可信评价不应因低分转为投诉。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 36313,
+      "source_text_sha256": "a7dafb8ea868d4f9a54d004450f9a84f5aa75602483179ac437caf36de0010b5",
+      "translation_en": "I bought 2 ORIGINAL BLACK HP670XL cartridges as advertised on the website, and they delivered 1 COMPATIBLE cartridge. I complained through the website and am waiting for an email response.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        },
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "contact"
+      ],
+      "analysis_zh": "compatible 在此指兼容替代墨盒，不等同于原装；同时有数量和规格不符。仅等待回复不另认定失联。",
+      "uncertainties": [],
+      "protected_literals": [
+        "2",
+        "1",
+        "HP670XL"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 31359,
+      "source_text_sha256": "1d0c6dfb2bfdaa5ccfc588adec75cdb57d1e3f2b5d06578bd4a5f0bf8ae03598",
+      "translation_en": "I requested a cake pan for an electric fryer, and the description on the website stated the fryer model when I bought it, but they delivered a tiny pan for another type of fryer.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "尺寸小与适配其他机型共同支持规格不符；未声称商品破损。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 40022,
+      "source_text_sha256": "bc213f08f59d0010f2bf0097c209c534b4890410cf9a3a9183086276091e4965",
+      "translation_en": "There is a delay in issuing the invoice and a delay in delivery. The product should have arrived by 19/02 at the latest. Today is 21/02, and the product has not reached the Recife, PE facility. Imagine when it will reach my home?",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        },
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        },
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "明确同时给出承诺日与当前日，足以判超期；不添加原文没有的年份。开票慢是独立问题。",
+      "uncertainties": [],
+      "protected_literals": [
+        "19/02",
+        "21/02",
+        "Recife",
+        "PE"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 5765,
+      "source_text_sha256": "44d8e4275dfb7096b4b205ce54d6866e1b30baede41018ff149a3b861bba8823",
+      "translation_en": "An attractive price, but delivery takes far too long, and there are no email updates about where the product is.",
+      "issues": [
+        {
+          "category": "delivery_late",
+          "severity": "medium"
+        },
+        {
+          "category": "seller_communication",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "没有物流邮件更新是明确的信息缺失；不同于仅表示正在等回复。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 57364,
+      "source_text_sha256": "2866d952c904c1cc6d4d3d9bd2a696c55e97db6763de277f6ba692b9ec6e3dc9",
+      "translation_en": "The goods were here for delivery, but then ended up in MATO GROSSO, and as of today, 23/12/2017, they still have not arrived at my home.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "marar 按上下文为非规范表达，意为去了别处；未提供承诺日期，不能单凭当前日判超期。",
+      "uncertainties": [],
+      "protected_literals": [
+        "MATO GROSSO",
+        "23/12/2017"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 98086,
+      "source_text_sha256": "5211cc271b0132e5f46ce53af518a2c93ee702457b1e165d6c58f2609e9842e9",
+      "translation_en": "The product did not meet my expectations, but it arrived before the expected date.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "respectivas 按语境理解为 expectativas，标记原文错词；未说明具体质量问题。",
+      "uncertainties": [
+        "respectivas 原文疑似误词"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 7918,
+      "source_text_sha256": "e0c96970091d6b6b280d546afeb57cfac8a44af600d02dbca7d0d623bfda16c6",
+      "translation_en": "They did not send me the colour that I had requested.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "不是未收到任何商品，而是收到的颜色不符。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 56551,
+      "source_text_sha256": "2c22fc5cb82c5e596edfb02fca44f345e556008b4bcc9aa9b8b327718e28c70c",
+      "translation_en": "I bought 2 teapots with infusers, but the company delivered only one. I still have the small box to prove that I received only one of the products. I want a refund or urgent delivery of the other teapot.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "refund_or_delivery_of_remaining_item"
+      ],
+      "analysis_zh": "退款与补发是二选一的补救请求，不额外断言退款失败。 明确请求退款或紧急交付另一件；不额外断定必须重新寄出替代品。",
+      "uncertainties": [],
+      "protected_literals": [
+        "2"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 66558,
+      "source_text_sha256": "571a42d9cefbd35486bd5dee0035de79bc6757c06407a54215485f09fe2b2ede",
+      "translation_en": "I will not buy from this website again.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "明确负面意向但没有具体故障。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 21612,
+      "source_text_sha256": "fb18ba5d226828b66977006e4f638583e06954ce35725c2683a5b73ca07dab6e",
+      "translation_en": "I am waiting for delivery of the goods, which I still have not received.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "明确未收到，而非仅询问预计时效。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 56797,
+      "source_text_sha256": "410a53f02d1d6ec1f11ef9a0a4ad5aed332c843501347b2e7b565b78600a7a0f",
+      "translation_en": "Thank you.",
+      "issues": [],
+      "sentiment_label": "positive",
+      "requested_actions": [],
+      "analysis_zh": "感谢文本，不提取问题。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 19155,
+      "source_text_sha256": "69229609a539736a59673c189361205753a56d0686abe176f803acb22304de9a",
+      "translation_en": "I have received neither the product nor a refund.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        },
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "商品和退款均未收到是明确事实；区别于“如果不到就退款”。 商品与退款均未收到是并列事实，不改写成买家提出退款或发货二选一的请求。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 66078,
+      "source_text_sha256": "3dc53c3fa5f4a6779e87718d84a947149229d853c3605dda471d977a6c9c1713",
+      "translation_en": "The delivery lead time could be shorter. The deadline was met. The product arrived correctly.",
+      "issues": [],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "改进愿望不等于实际迟到；整体混合但无明确故障。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 44885,
+      "source_text_sha256": "7e3818f255d1df7fcfe6ccb72d632ad2bd1625f8516a1504f62eb202a311f21b",
+      "translation_en": "The material is not very good.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "not very good 不应译成非常差；质量评价强度保留。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 13161,
+      "source_text_sha256": "5c02befdc53f050946d78a9a8ba3cafe560128d3031e62f69d0cd750d7ffd188",
+      "translation_en": "My product arrived incorrectly; it was another model. I went to exchange it, but it is no longer available.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        },
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "exchange"
+      ],
+      "analysis_zh": "后句省略主语，解释为所需替换品没有了；缺货范围需人工确认。",
+      "uncertainties": [
+        "não tem mais 省略了缺货对象"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 58721,
+      "source_text_sha256": "9f1c5daced2525c92c288b9ae29afe6b4662e9b5fab8ebb015ff8a1c4a585220",
+      "translation_en": "The packaging appears to be original, but immediately after installation, the printer itself says that the supply is NOT HP. The cartridge has no colour indication, and the HP name appears on a paper label rather than being painted on the cartridge.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "这是买家怀疑原装身份的证据，不能译成已由平台鉴定为假货；HP 否定归属为打印机提示。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 31377,
+      "source_text_sha256": "91867062088d22e292a8bc3174bc945ab403b7f4e08849277289081060470b8e",
+      "translation_en": "The material is excellent, simple, with a reasonable finish and flexible. It was delivered on the last day of the three-week delivery window. However, I want to return the product because it does not meet my expectations.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [
+        "return"
+      ],
+      "analysis_zh": "最后一天仍属按时，reasonable finish 不译为缺陷；不合个人预期归 other。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 64521,
+      "source_text_sha256": "b46a0502d372c73275bbdd5e02106195b888fb67d472de39f54e897c9c036f6b",
+      "translation_en": "Not everything I ordered arrived, but it is shown as if it had been delivered.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "状态与实际收货不一致；不推断责任方或故意造假。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 50977,
+      "source_text_sha256": "b4295b879fe35d7ac43b9bdb963cbe63a006cf9b7e3815b4735640408850e672",
+      "translation_en": "I have not received my product.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "缺货，没有承诺时间信息。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 5592,
+      "source_text_sha256": "65c98d9fda89c1a2bf3f77a4acf11f261ce22586051a2e9ab518aafee2c2f5ad",
+      "translation_en": "The product was not delivered!",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "未交付。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 93983,
+      "source_text_sha256": "4044de3ae923bc9e44ce9cc07062d9788b3b9b575ecdcf3e2ecf1d2760a2b6c2",
+      "translation_en": "I just thought it was made of rubber, not plastic.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "个人以为的材质不等于广告明确承诺，不标规格欺诈或发错货。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 83559,
+      "source_text_sha256": "6700c9480a1724e66aed522045fd3b6c7ad154c88dfac12b82c62871191102bd",
+      "translation_en": "The remote control that arrived was wrong. I ordered a remote for a Philco 660n home theatre system, and an LE- 798 arrived. How do I exchange it?",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "exchange"
+      ],
+      "analysis_zh": "型号与大小写按原文保留；不能把 home theater 翻译成电影院。",
+      "uncertainties": [],
+      "protected_literals": [
+        "Philco",
+        "660n",
+        "LE- 798"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 61066,
+      "source_text_sha256": "441a275a907caf3578a429365782e6c79a6a60b4607695c4eac92838cb8806dc",
+      "translation_en": "I can only assess the store after my order is completed. I was already dreaming about my sink. I do not know whether the store or the post office is at fault, but I have not received my product.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "明确不知道责任方；不得自动归责卖家或物流。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 87295,
+      "source_text_sha256": "c2e0b78d9bb2f80d1a063a86afbba489a93b8a9c9bae11011effabfba41dd8c3",
+      "translation_en": "I am very upset.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "泛泛情绪，不能编造原因。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 88408,
+      "source_text_sha256": "ebca84b08750acaca275e1b4c3ced9a4b087c786857deb45a0c5be315de17623",
+      "translation_en": "Honestly, I would not recommend it because only half of what I ordered arrived. Where is 'a empresária nada sexy' by author Deby Incour? I will only change my opinion once I have this book.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [
+        "missing_book_status"
+      ],
+      "analysis_zh": "书名与作者原样保留；“一半”按下文缺一本书理解，不译成一本书被切成半本。 cadê 是询问缺少的书在哪里；后句表达收到书才改评价，不直接等同于要求重新寄出。",
+      "uncertainties": [],
+      "protected_literals": [
+        "a empresária nada sexy",
+        "Deby Incour"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 90314,
+      "source_text_sha256": "f8c82253c265bdfd69fa12f7f50f9b5b034a3ba93227ef48fb5eaeb92ababab9",
+      "translation_en": "I think it is taking a very long time.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "low"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "未说明是配送、审批或其他环节，保留歧义而不强制标配送迟到。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": false
+    },
+    {
+      "source_row": 67174,
+      "source_text_sha256": "4fd1bad47da51242c4906f5ec1c06757758f258fd7e9d98f4348ff89c5c73e48",
+      "translation_en": "The sales receipt was missing.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "cupom fiscal 是购物税务小票，不是折扣券；票据缺失不属于商品缺件。 缺少票据是事实；补开票据可作为后续处理，但原文未明确提出该动作。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 55444,
+      "source_text_sha256": "b905716650eb65d763bfb59730ef5a4b3d1bc0e84dcd041b7ad7d864e2a5d0f8",
+      "translation_en": "Still nothing as of today. The deadline was the 26th.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "暗示可能超期，但没有今天的日期；将 delivery_late 留为歧义候选，不作为确定类别。",
+      "uncertainties": [
+        "delivery_late：今天的日期未提供"
+      ],
+      "protected_literals": [
+        "26"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 77864,
+      "source_text_sha256": "76ad6b347d2390309794ff834475bf9d948f2aec411176235c65f3053dbf1832",
+      "translation_en": "The product did not meet my expectations. It is very different from what was shown on the website.",
+      "issues": [
+        {
+          "category": "wrong_product",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "与网站展示有明显差异，超过单纯个人期望；差异的具体维度未说明。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 6341,
+      "source_text_sha256": "173f921ae65b681bc68480939c0da4a3628d2ec7eb587bb3fbd85bc1678d5e2a",
+      "translation_en": "The product is inferior to what was advertised and is of low quality.",
+      "issues": [
+        {
+          "category": "quality_defect",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "inferior 更直接是质量比宣传差，没有明确错型号/规格，保守不额外标 wrong_product。",
+      "uncertainties": [
+        "wrong_product：质量不及广告不必然是错货"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 55871,
+      "source_text_sha256": "0c7d3beea651494f5123fc82e0e220a84497dfcda17712828e4e374ef85d4076",
+      "translation_en": "The product was not delivered. It was expected on 27/08.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "无评价当天时间，不能为日期补年份或确定已超期。",
+      "uncertainties": [
+        "delivery_late：缺当前日期及年份"
+      ],
+      "protected_literals": [
+        "27/08"
+      ],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 52770,
+      "source_text_sha256": "34b5a8f6803262c99ef610df773e2950da5c6445101094e9e78863511ea11f37",
+      "translation_en": "I bought the product, and so far nothing has arrived. They say it is at the post office. If I were going to collect it somewhere, I would have bought it from a physical store.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        },
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "条件句表达对自取安排的不满，不是新下单计划。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 51500,
+      "source_text_sha256": "0953694db3c1e0df4f2f1c3f9c18a1c0a41feae68aa637d1f85b39731da83b5d",
+      "translation_en": "I have not received my product.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "negative",
+      "requested_actions": [],
+      "analysis_zh": "缺货。",
+      "uncertainties": [],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 73576,
+      "source_text_sha256": "7d250e8e68056a10d419a40fb074de59a60ee9512994c5603c1bf2ba2fd98b1c",
+      "translation_en": "The delivery time was excellent; it was even early. However, I selected other products besides the two that arrived, so I cannot say that I am satisfied as a customer.",
+      "issues": [
+        {
+          "category": "missing_item",
+          "severity": "high"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [],
+      "analysis_zh": "原文缺词，按上下文补足 cannot say that；早到仅适用于已到两件，不代表全部履约。",
+      "uncertainties": [
+        "原文 não posso que 有省略/错写"
+      ],
+      "protected_literals": [],
+      "actionable_for_seller": true
+    },
+    {
+      "source_row": 41239,
+      "source_text_sha256": "2d6df4766964a2539a784d268508968c888d78d80ee2b359124ab470cbe4ea9a",
+      "translation_en": "The store has been treating me quite fairly. I am going to return the product. The advertisement gave the impression that it was the watch: it showed pictures of the watch, a description of its functions, and a price reduction from 899 to 250.",
+      "issues": [
+        {
+          "category": "other",
+          "severity": "medium"
+        }
+      ],
+      "sentiment_label": "mixed",
+      "requested_actions": [
+        "return"
+      ],
+      "analysis_zh": "投诉对象是广告给人的印象；原文没有交代实际收到的物品，不虚构手机、手表配件等。",
+      "uncertainties": [],
+      "protected_literals": [
+        "899",
+        "250"
+      ],
+      "actionable_for_seller": true
+    }
+  ]
+}

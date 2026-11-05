@@ -1,0 +1,22 @@
+{
+  "cases": 60,
+  "full_text_translations": 60,
+  "issue_count": 65,
+  "categories": {
+    "quality_defect": 7,
+    "other": 17,
+    "wrong_product": 9,
+    "seller_communication": 2,
+    "missing_item": 26,
+    "delivery_late": 4
+  },
+  "cases_with_uncertainties": 11,
+  "revised_prior_references": [
+    55444,
+    6341
+  ],
+  "authoring_stage_human_reviews": 0,
+  "independent_accuracy": null,
+  "numeric_confidence": "not assigned; no calibration evidence",
+  "scope": "post-hoc analysis; cannot be used to claim unseen automatic accuracy"
+}
